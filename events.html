@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html class="is-page-default" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-title" content="Site title">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/manifest.json">
+		<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+		<title>NAEL - Events</title>
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<div class="app">
+			<!-- Header :: Start-->
+			<header class="header">
+				<div class="header__top">
+					<div class="container">
+						<div class="header__lang">
+							<a class="header__lang-link current" href="#">English</a><span class="header__lang-sep">|</span>
+							<a class="header__lang-link" href="#">Cymraeg</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__main">
+					<div class="container">
+						<div class="header__logo">
+							<a href="#">
+								<img src="images/logo.svg" alt="">
+							</a>
+						</div>
+						<ul class="header__menu is-lg-visible">
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">What we do</a>
+							</li>
+							<li>
+								<a href="#">Events</a>
+							</li>
+							<li>
+								<a href="#">Resources</a>
+							</li>
+							<li>
+								<a href="#">News & Blog</a>
+							</li>
+						</ul>
+						<a class="btn btn-menu header__btn-menu js-btn-popup is-lg-hidden" href="#mobile-menu"><span></span></a>
+						<a class="btn header__search is-lg-visible" href="#">
+							<svg class="icon-search">
+								<use xlink:href="sprites/sprite.svg#icon-search"></use>
+							</svg>
+						</a>
+						<a class="btn btn-base btn-base--theme-green btn-base--size-medium is-lg-visible" href="#">Contact</a>
+					</div>
+				</div>
+				<div class="mobile-menu js-popup is-lg-hidden" id="mobile-menu">
+					<ul class="header__menu">
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">What we do</a>
+						</li>
+						<li>
+							<a href="#">Events</a>
+						</li>
+						<li>
+							<a href="#">Resources</a>
+						</li>
+						<li>
+							<a href="#">News & Blog</a>
+						</li>
+					</ul>
+					<a class="btn header__search" href="#">
+						<svg class="icon-search">
+							<use xlink:href="sprites/sprite.svg#icon-search"></use>
+						</svg>
+					</a>
+					<a class="btn btn-base btn-base--theme-green btn-base--size-medium" href="#">Contact</a>
+					<a class="btn btn-menu opened mobile-menu__close js-popup-close"><span></span></a>
+				</div>
+			</header>
+			<!-- Header :: End-->
+			<!-- Main :: Start-->
+			<main class="main">
+				<section class="section-news section-news--bg-white">
+					<div class="container">
+						<div class="section-top-bar">
+							<h4>Events</h4>
+							<div class="filter">
+								<div class="filter__block">
+									<input class="filter__input filter__input--search" type="text" placeholder="Search">
+									<button class="btn filter__input-btn-search" type="submit">
+										<svg class="icon-search">
+											<use xlink:href="sprites/sprite.svg#icon-search"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="filter__block">
+									<select>
+										<option disabled selected>Event type</option>
+										<option value="Option 1">Option 1</option>
+										<option value="Option 2">Option 2</option>
+										<option value="Option 3">Option 3</option>
+									</select>
+								</div>
+								<div class="filter__block">
+									<select>
+										<option disabled selected>Category</option>
+										<option value="Option 1">Option 1</option>
+										<option value="Option 2">Option 2</option>
+										<option value="Option 3">Option 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row news__row news__row--catalog">
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/working-meeting.jpg" alt="" srcset="images/working-meeting@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/audience.jpg" alt="" srcset="images/audience@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/conference-tablet.jpg" alt="" srcset="images/conference-tablet@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/working-meeting.jpg" alt="" srcset="images/working-meeting@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/audience.jpg" alt="" srcset="images/audience@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/conference-tablet.jpg" alt="" srcset="images/conference-tablet@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/working-meeting.jpg" alt="" srcset="images/working-meeting@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/audience.jpg" alt="" srcset="images/audience@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-lg-4">
+								<div class="news__item news__item--news news__item--bg-white-light theme-green">
+									<div class="news__item-img news__item-img--mod-height">
+										<a href="#">
+											<img src="images/conference-tablet.jpg" alt="" srcset="images/conference-tablet@2x.jpg 2x">
+										</a>
+									</div>
+									<div class="news__item-main">
+										<div>
+											<a class="news__item-categories" href="#">00/00/00</a>
+										</div>
+										<div class="news__item-title">Insight Series</div>
+										<div class="news__item-desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+										</div>
+										<div class="news__item-more">
+											<a class="link-more" href="#">Find out more
+												<svg class="icon-arrow-long-right">
+													<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bg-figure bg-figure-1 bg-figure-1--pos-4"></div>
+						<div class="bg-figure bg-figure-3 bg-figure-3--pos-4"></div>
+						<div class="bg-figure bg-figure-2 bg-figure-2--pos-4"></div>
+						<div class="bg-figure bg-figure-6 bg-figure-6--pos-1"></div>
+					</div>
+				</section>
+			</main>
+			<!-- Main :: End-->
+			<!-- Footer :: Start-->
+			<footer class="footer">
+				<div class="footer__main">
+					<div class="container">
+						<div class="footer__main-top">
+							<div class="footer__logo">
+								<img src="images/logo-white.svg" alt="">
+							</div>
+							<ul class="socials">
+								<li>
+									<a href="#" target="_blank">
+										<svg class="icon-linkedin-in">
+											<use xlink:href="sprites/sprite.svg#icon-linkedin-in"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<svg class="icon-twitter">
+											<use xlink:href="sprites/sprite.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<svg class="icon-facebook-f">
+											<use xlink:href="sprites/sprite.svg#icon-facebook-f"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 footer__contacts">
+								<p>Swansea Civic Centre,<br>Oystermouth Road,<br>Swansea,<br>SA1 3SN</p>
+								<p> 
+									<a href="mailto:post@agaa.cymru">post@agaa.cymru</a><br>01792 304971
+								</p>
+							</div>
+							<div class="col-lg-6 footer__menu">
+								<div class="row">
+									<div class="col-12 col-md-6 col-lg-3 footer__menu-col">
+										<div class="footer__menu-title"> 
+											<a href="#">About</a>
+										</div>
+										<ul class="footer__menu-main">
+											<li>
+												<a href="#">Vision & Values</a>
+											</li>
+											<li>
+												<a href="#">Team</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-6 col-lg-3 footer__menu-col">
+										<div class="footer__menu-title"> 
+											<a href="#">What we do</a>
+										</div>
+										<ul class="footer__menu-main">
+											<li>
+												<a href="#">Endorsement  & Quality</a>
+											</li>
+											<li>
+												<a href="#">Innovation</a>
+											</li>
+											<li>
+												<a href="#">System Leadership</a>
+											</li>
+											<li>
+												<a href="#">Academy Associates</a>
+											</li>
+											<li>
+												<a href="#">Insight</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-6 col-lg-3 footer__menu-col">
+										<div class="footer__menu-title"> 
+											<a href="#">Events</a>
+										</div>
+										<div class="footer__menu-title"> 
+											<a href="#">News & Blog</a>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-3 footer__menu-col">
+										<div class="footer__menu-title"> 
+											<a href="#">Resources</a>
+										</div>
+										<ul class="footer__menu-main">
+											<li>
+												<a href="#">Newsletter</a>
+											</li>
+											<li>
+												<a href="#">Archive</a>
+											</li>
+											<li>
+												<a href="#">Media</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 footer__subscribe">
+								<div class="footer__subscribe-title">Subscribe to our newsletter</div>
+								<form class="footer__subscribe-form">
+									<div>
+										<input class="ui-input ui-input--subscribe ui-input--subscribe--footer" type="email" placeholder="Your Email Address">
+										<button class="btn btn-base footer__subscribe-form-submit" type="submit">
+											<svg class="icon-arrow-long-right">
+												<use xlink:href="sprites/sprite.svg#icon-arrow-long-right"></use>
+											</svg>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 order-lg-2">
+								<ul class="footer__bottom-menu">
+									<li>
+										<a href="#">Terms of Service</a>
+									</li>
+									<li>
+										<a href="#">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="#">Security</a>
+									</li>
+									<li>
+										<a href="#">Sitemap</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6 footer__bottom-copyright order-lg-1">Copyright 2021 National Leadership Wales.  All Rights Reserved</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer :: End-->
+			<!-- Popups :: Start-->
+			<!-- Popups :: End-->
+		</div>
+		<!-- Scripts :: Start-->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/plugins.min.js"></script>
+		<script src="js/app.min.js"></script>
+		<!-- Scripts :: End-->
+	</body>
+</html>
